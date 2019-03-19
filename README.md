@@ -1,2 +1,2 @@
-# frontend_votoBlock
+# VotoBlock
 Front-end for VotoBlock Project
