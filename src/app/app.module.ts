@@ -6,6 +6,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { ResultsviewPage } from '../pages/resultsview/resultsview'; 
+import { ResultsviewPageModule } from '../pages/resultsview/resultsview.module';
 
 @NgModule({
   declarations: [
@@ -14,12 +16,14 @@ import { HomePage } from '../pages/home/home';
   ],
   imports: [
     BrowserModule,
+    ResultsviewPageModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    ResultsviewPage
   ],
   providers: [
     StatusBar,
