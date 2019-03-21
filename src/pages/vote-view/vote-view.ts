@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
 /**
  * Generated class for the VoteViewPage page.
  *
@@ -8,18 +7,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+@IonicPage({
+  segment: 'vote-view',
+  name: 'vote-view'
+})
 @Component({
   selector: 'page-vote-view',
-  templateUrl: 'vote-view.html',
+  templateUrl: 'vote-view.html'
 })
 export class VoteViewPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad VoteViewPage');
   }
-
 }
