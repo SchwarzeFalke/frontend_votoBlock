@@ -6,10 +6,33 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>voteView</ion-title>
+    <ion-title>Emitir Voto</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  <ion-list>
 
+    <ion-item>
+      <ion-label>Periodo de elección</ion-label>
+      <ion-datetime display-format="MMM DD, YYYY"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Elección</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Candidato</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+
+      <ion-label>Confirmar voto</ion-label>
+      <ion-checkbox color="warning" checked="false"></ion-checkbox>
+    </ion-item>
+
+    <button ion-button color="warning" full>Emitir voto</button>
+  </ion-list>
 </ion-content>
