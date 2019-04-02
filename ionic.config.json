@@ -1,5 +1,5 @@
 {
-  "name": "VotoBlock",
+  "name": "frontend_votoBlock",
   "integrations": {},
-  "type": "ionic-angular"
+  "type": "angular"
 }
