@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title align="center">
+      ¡Consulta de resultados!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-list>
+        <ion-list-header class="ion-list-header">Consulta de resultados</ion-list-header>
+      
+        <ion-item>
+          <ion-label>Periodo</ion-label>
+          <ion-select placeholder="Selecciona" okText="Okay" cancelText="Cancelar">
+          <ion-select-option value="f">2018</ion-select-option>
+          <ion-select-option value="m">2017</ion-select-option>
+          <ion-select-option value="m">2016</ion-select-option>
+          <ion-select-option value="m">2015</ion-select-option>
+          </ion-select>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>Tipo</ion-label>
+          <ion-select placeholder="Selecciona" okText="Okay" cancelText="Cancelar">
+          <ion-select-option value="brown">Presidencia</ion-select-option>
+          <ion-select-option value="blonde">Gobernatura</ion-select-option>
+          <ion-select-option value="black">Municipal</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Lugar</ion-label>
+          <ion-select placeholder="Selecciona" okText="Okay" cancelText="Cancelar">
+          <ion-select-option value="Mexico">Mexico</ion-select-option>
+          <ion-select-option value="blonde">Estados Unidos</ion-select-option>
+          <ion-select-option value="black">Canada</ion-select-option>
+          </ion-select>
+        </ion-item>
+    </ion-list>
+
+
+    <ion-button (click)="goTopresidentialelectionview('325')" class="ion-button" expand="block" shape="round">
+      Buscar
+    </ion-button>
+
+  </div>
+</ion-content>
