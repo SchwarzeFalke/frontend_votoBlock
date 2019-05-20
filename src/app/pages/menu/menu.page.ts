@@ -18,6 +18,11 @@ export class MenuPage implements OnInit {
       title: 'Elecciones disponibles',
       url: '/menu/elections',
       icon: 'md-albums'
+    },
+    {
+      title: 'Salir',
+      url: '',
+      icon: 'log-out'
     }
   ]
 

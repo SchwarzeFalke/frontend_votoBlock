@@ -16,7 +16,8 @@ const routes: Routes = [
       { path: 'elections', loadChildren: '../elections/elections.module#ElectionsPageModule' }
     ]
   },
-  { path: 'profile', redirectTo: '/menu/profile' }
+  { path: 'profile', redirectTo: '/menu/profile' },
+  { path: '', redirectTo: 'menu/profile' }
 ];
 
 @NgModule({

@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', loadChildren: './pages/menu/menu.module#MenuPageModule' },
+  { path: 'electioninfo', loadChildren: './pages/electioninfo/electioninfo.module#ElectioninfoPageModule' },
 ];
 
 @NgModule({
