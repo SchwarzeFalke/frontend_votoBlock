@@ -1,15 +1,61 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-header> </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be
-      your guide.</p>
-  </div>
+  <ion-slides
+    justify-content-center
+    align-items-center
+    style="height: 100%; flex-direction: column"
+  >
+    <ion-slide>
+      <img src="../assets/img/logo.png" style="height: 50%;" /><br />
+    </ion-slide>
+
+    <ion-slide>
+      <img
+        src="../assets/img/election.png"
+        style="height: 35%;"
+        class="circle-pic"
+      /><br />
+    </ion-slide>
+
+    <ion-slide>
+      <img src="../assets/img/community.png" style="height: 35%;" /><br />
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>
+            <fa-icon
+              [icon]="['fas', 'user-circle']"
+              style="color: rgb(237, 149, 90);"
+              size="7x"
+            ></fa-icon>
+          </ion-card-subtitle>
+          <ion-card-title>
+            <h3 text-center margin-top>¡Inicia sesión o Regístrate!</h3>
+          </ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-input
+            placeholder="Codigo Electoral"
+            [(ngModel)]="electoral_key"
+            style="text-align: left"
+          ></ion-input>
+          <ion-input
+            type="password"
+            [(ngModel)]="pass"
+            placeholder="Password"
+            style="text-align: left"
+          ></ion-input>
+          <br />
+          <ion-button color="primary" (click)="LoginButton()"
+            >Iniciar Sesion</ion-button
+          >
+          <ion-button color="medium">Registrarse</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
