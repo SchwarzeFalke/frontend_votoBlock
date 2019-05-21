@@ -16,11 +16,12 @@ export class ResultsviewPage implements OnInit {
         return respuesta.json();
       }) .then((respuesta) => {
         respuesta.forEach(function(element) {
-          console.log(element[0]);
+          console.log(element[0])
         var ionselectoption = document.createElement("ion-select-option");
         ionselectoption.setAttribute("id","isp"+element[0]);
         ionselectoption.textContent=element[0];
         $("#ion-select1").appendChild(ionselectoption);
+        console.log(element[0])
         });
       })
       function $(Selector) {
@@ -59,17 +60,17 @@ export class ResultsviewPage implements OnInit {
       $("#ion-select3").appendChild(ionselectoption);
       });
     })
+
     function $(Selector) {
       return document.querySelector(Selector);
     }
   }
 
-  
+
 
   constructor(
     private navCtrl: NavController // Constructor para usar NavController
   ) { 
-    console.log("hola");
     this.cargar();
     this.cargar2();
     this.cargar3();
@@ -78,6 +79,14 @@ export class ResultsviewPage implements OnInit {
   // Método para ir a la pagina de elecciones presidenciales con una animacion
   goTopresidentialelectionview(id: string){
     this.navCtrl.navigateForward(`presidentialelectionview/${id}`)
+  }
+
+  goTogobernadorlelectionview(id: string){
+    this.navCtrl.navigateForward(`gobernadorelectionview/${id}`)
+  }
+
+  goToMunicipalelectionview(id: string){
+    this.navCtrl.navigateForward(`municipalelectionview/${id}`)
   }
 
 

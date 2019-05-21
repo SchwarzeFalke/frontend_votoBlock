@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title align="center">
-      ¡Consulta de resultados!
+      ¡Consulta de votaciones!
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,7 +9,7 @@
 <ion-content>
   <div class="ion-padding">
     <ion-list>
-        <ion-list-header class="ion-list-header">Consulta de resultados</ion-list-header>
+        <ion-list-header class="ion-list-header">Consulta de votaciones</ion-list-header>
       
         <ion-item>
           <ion-label>Periodo</ion-label>
@@ -28,16 +28,22 @@
         <ion-item>
             <ion-label>Lugar</ion-label>
             <ion-select id="ion-select3" placeholder="Selecciona" okText="Okay" cancelText="Cancelar">
-  
             </ion-select>
           </ion-item>
-
     </ion-list>
 
 
-    <ion-button  (click)="goTopresidentialelectionview('ion-select3.id')" class="ion-button" expand="block" shape="round" color="danger">
-      Buscar
+    <ion-button  (click)="goTopresidentialelectionview('123')" class="ion-button" expand="block" shape="round" color="danger">
+      Elecciones Presidenciales
     </ion-button>
+
+    <ion-button  (click)="goTogobernadorlelectionview('123')" expand="block" shape="round" color="danger">
+      Elecciones Gubernamentales
+    </ion-button>
+
+    <ion-button  (click)="goToMunicipalelectionview('123')" expand="block" shape="round" color="danger">
+        Elecciones Municipales
+      </ion-button>
 
   </div>
 </ion-content>
