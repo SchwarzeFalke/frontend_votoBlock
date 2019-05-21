@@ -4,12 +4,12 @@
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #3880ff;
-  --ion-color-primary-rgb: 56, 128, 255;
+  --ion-color-primary: #FFBD59;
+  --ion-color-primary-rgb: #F9A03F;
   --ion-color-primary-contrast: #ffffff;
-  --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #3171e0;
-  --ion-color-primary-tint: #4c8dff;
+  --ion-color-primary-contrast-rgb: #222222;
+  --ion-color-primary-shade: #ED6A5A;
+  --ion-color-primary-tint: rgb(237, 149, 90);
 
   /** secondary **/
   --ion-color-secondary: #0cd1e8;
@@ -60,7 +60,7 @@
   --ion-color-dark-tint: #383a3e;
 
   /** medium **/
-  --ion-color-medium: #989aa2;
+  --ion-color-medium: #ED6A5A;
   --ion-color-medium-rgb: 152, 154, 162;
   --ion-color-medium-contrast: #ffffff;
   --ion-color-medium-contrast-rgb: 255, 255, 255;
@@ -74,4 +74,100 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /** vote theme **/
+  --ion-color-vote: #FFBD59;
+  --ion-color-vote-rgb: #F9A03F;
+  --ion-color-vote-contrast: #222222;
+  --ion-color-vote-contrast-rgb: #ED6A5A;
+  --ion-color-vote-shade: #FFFFFF;
+  --ion-color-vote-tint: #f5f6f9;
+
+}
+
+.circle-pic {
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+@font-face {
+  font-family: Heebo;
+  font-style: thin;
+  font-weight: 200;
+  src: url('../assets/fonts/heebo/Heebo-Thin.ttf');
+}
+
+@font-face {
+  font-family: Heebo;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/heebo/Heebo-Regular.ttf');
+}
+
+@font-face {
+  font-family: Heebo;
+  font-style: medium;
+  font-weight: 600;
+  src: url('../assets/fonts/heebo/Heebo-Medium.ttf');
+}
+
+@font-face {
+  font-family: Heebo;
+  font-style: black;
+  font-weight: 700;
+  src: url('../assets/fonts/heebo/Heebo-Black.ttf');
+}
+
+@font-face {
+  font-family: Heebo;
+  font-style: bold;
+  font-weight: 800;
+  src: url('../assets/fonts/heebo/Heebo-Bold.ttf');
+}
+
+@font-face {
+  font-family: Heebo;
+  font-style: extra-bold;
+  font-weight: 900;
+  src: url('../assets/fonts/heebo/Heebo-ExtraBold.ttf');
+}
+
+$font-family-base: "Heebo",
+sans-serif !default;
+
+body {
+  font-family: "Heebo" !important;
+  font-weight: 400 !important;
+}
+
+h1 {
+  font-family: "Heebo" !important;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Heebo" !important;
+  font-weight: 800;
+}
+
+h3 {
+  font-family: "Heebo" !important;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Heebo" !important;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Heebo" !important;
+  font-weight: 200;
+}
+
+button {
+  font-family: "Heebo" !important;
+  font-weight: 400;
 }
