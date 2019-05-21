@@ -1,9 +1,24 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>electioninfo</ion-title>
+    <ion-title align = "center">{{electionName}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+    <ion-list>
+        <ion-item style="color: rgb(237, 149, 90)">Periodo:</ion-item>
+        <ion-item>{{electionData.candidacy}}</ion-item>
+        <ion-item style="color: rgb(237, 149, 90)">Fecha de inicio:</ion-item>
+        <ion-item>{{electionData.period}}</ion-item>
+        <ion-item style="color: rgb(237, 149, 90)">Fecha de finalización:</ion-item>
+        <ion-item>{{electionData.startDate}}</ion-item>
+      </ion-list>
+      <h2 style="color:#000000;text-align:center;">Candidatos</h2>
+      <ion-list *ngFor = "let e of candidatesList">
+        <ion-item [routerLink] = "['/candidateinfo', e[0]]">
+          <!--<img src="img/tZVbCAk0RhijeFmSGApH_image.png">-->
+          <ion-icon name="arrow-forward"></ion-icon>
+          {{e[1]}} {{e[3]}}
+        </ion-item>
+      </ion-list>
 </ion-content>

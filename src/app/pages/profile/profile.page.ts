@@ -20,7 +20,7 @@ export class ProfilePage implements OnInit {
     .then((respuesta) => {
       return respuesta.json();
     }) .then((respuesta) => {
-      this.electoral_key = respuesta[0][1] + respuesta[0][2];
+      this.electoral_key = respuesta[0][1] + ' ' + respuesta[0][2];
       this.name = respuesta[0][0];
       this.address = respuesta[0][3];
     })

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title align = "center">Candidato</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="spacer" style="width: 300px; height: 33px;"></div>
+  <ion-list>
+    <ion-item>Nombre: {{candidateData.name}}</ion-item>
+    <ion-item>Clave electoral: {{candidateId}}</ion-item>
+    <ion-item>Candidatura: {{candidateData.candidacy}}</ion-item>
+    <ion-item>
+      <ion-avatar>
+        <img src = "../../assets/img/{{candidateData.party}}.png">
+      </ion-avatar>
+      Partido: {{candidateData.party}}
+    </ion-item>
+    <ion-item >Status: {{candidateData.status}}</ion-item>
+  </ion-list>
+</ion-content>
