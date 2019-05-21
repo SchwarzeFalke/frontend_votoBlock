@@ -9,18 +9,12 @@ import { UserService } from '../api/user.service';
 export class HomePage {
   electoral_key = '';
   pass = '';
+  user = [];
   constructor(public userService: UserService) {}
 
   LoginButton() {
-    this.userService.login(this.electoral_key, this.pass).subscribe(
-      data => {
-        // Success
-        console.log(data);
-        //this.users = data['results'];
-      },
-      error => {
-        console.error(error);
-      }
-    );
+    this.userService.Login(this.electoral_key, this.pass).subscribe(data => {
+      console.log(JSON.stringify(data));
+    });
   }
 }

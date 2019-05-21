@@ -1,21 +1,13 @@
 <ion-header> </ion-header>
 
 <ion-content>
-  <ion-slides
-    justify-content-center
-    align-items-center
-    style="height: 100%; flex-direction: column"
-  >
+  <ion-slides justify-content-center align-items-center style="height: 100%; flex-direction: column">
     <ion-slide>
       <img src="../assets/img/logo.png" style="height: 50%;" /><br />
     </ion-slide>
 
     <ion-slide>
-      <img
-        src="../assets/img/election.png"
-        style="height: 35%;"
-        class="circle-pic"
-      /><br />
+      <img src="../assets/img/election.png" style="height: 35%;" class="circle-pic" /><br />
     </ion-slide>
 
     <ion-slide>
@@ -26,11 +18,7 @@
       <ion-card>
         <ion-card-header>
           <ion-card-subtitle>
-            <fa-icon
-              [icon]="['fas', 'user-circle']"
-              style="color: rgb(237, 149, 90);"
-              size="7x"
-            ></fa-icon>
+            <fa-icon [icon]="['fas', 'user-circle']" style="color: rgb(237, 149, 90);" size="7x"></fa-icon>
           </ion-card-subtitle>
           <ion-card-title>
             <h3 text-center margin-top>¡Inicia sesión o Regístrate!</h3>
@@ -38,21 +26,10 @@
         </ion-card-header>
 
         <ion-card-content>
-          <ion-input
-            placeholder="Codigo Electoral"
-            [(ngModel)]="electoral_key"
-            style="text-align: left"
-          ></ion-input>
-          <ion-input
-            type="password"
-            [(ngModel)]="pass"
-            placeholder="Password"
-            style="text-align: left"
-          ></ion-input>
+          <ion-input placeholder="Codigo Electoral" [(ngModel)]="electoral_key" style="text-align: left"></ion-input>
+          <ion-input type="password" [(ngModel)]="pass" placeholder="Password" style="text-align: left"></ion-input>
           <br />
-          <ion-button color="primary" (click)="LoginButton()"
-            >Iniciar Sesion</ion-button
-          >
+          <ion-button color="primary" (click)="LoginButton()">Inicia Sesion</ion-button>
           <ion-button color="medium">Registrarse</ion-button>
         </ion-card-content>
       </ion-card>

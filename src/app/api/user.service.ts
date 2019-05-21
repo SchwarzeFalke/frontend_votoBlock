@@ -8,7 +8,7 @@ export class UserService {
   apiUrl = 'https://votoblock-api.herokuapp.com/';
   constructor(private http: HttpClient) {}
 
-  login(electoral_key: string, password: string) {
+  Login(electoral_key: string, password: string) {
     const formData = new FormData();
     const headers = new HttpHeaders({ enctype: 'multipart/form-data' });
 
@@ -20,7 +20,7 @@ export class UserService {
     });
   }
 
-  SignUpButton(electoral_key: string, password: string, email: string) {
+  SignUp(electoral_key: string, password: string, email: string) {
     const formData = new FormData();
     const headers = new HttpHeaders({ enctype: 'multipart/form-data' });
 
