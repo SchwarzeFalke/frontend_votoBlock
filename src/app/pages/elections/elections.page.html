@@ -13,10 +13,10 @@
         <ion-title align = "center">Elecciones Disponibles</ion-title>
     </ion-card-header>
 
-    <ion-list>
-      <ion-button expand = "full" routerLink = "/electioninfo">
+    <ion-list *ngFor = "let e of array">
+      <ion-button expand = "full" [routerLink] = "['/electioninfo', e[1]]">
         <ion-icon name ="md-arrow-dropright"></ion-icon>
-        Elección de gobernador
+        {{e[1]}}
       </ion-button>
     </ion-list>
   </ion-card>

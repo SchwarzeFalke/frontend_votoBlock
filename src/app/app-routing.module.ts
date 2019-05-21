@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: 'vote-show', loadChildren: './vote-show/vote-show.module#VoteShowPageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: '', loadChildren: './pages/menu/menu.module#MenuPageModule' },
-  { path: 'electioninfo', loadChildren: './pages/electioninfo/electioninfo.module#ElectioninfoPageModule' }
+  { path: 'electioninfo/:id', loadChildren: './pages/electioninfo/electioninfo.module#ElectioninfoPageModule' }
 ];
 
 @NgModule({
